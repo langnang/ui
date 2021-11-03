@@ -3,4 +3,4 @@
  * @param  {...any} elements
  */
 
-export const ArrayOf = (...elements) => elements;
+export const arrayOf = (...elements) => elements;

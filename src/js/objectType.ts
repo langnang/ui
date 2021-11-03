@@ -60,3 +60,8 @@ export const isUndefined = (obj: any) => objectType(obj) === 'undefined'
  */
 
 export const isNull = (obj: any) => objectType(obj) === 'null'
+/**
+ * 检测正则
+ * @param {*} object 
+ */
+export const isRegExp = (obj: any) => objectType(obj) === 'regexp'
