@@ -1,6 +1,5 @@
 /**
- * @name bubbleSort
- * @desc 冒泡排序
+ * 冒泡排序
  */
 export const bubbleSort = (array) => {
   // 冒泡：将比较数组内的最大值移至末尾

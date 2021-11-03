@@ -1,6 +1,6 @@
 import { format } from "./format";
 import { timestamp } from "./timestamp";
-import { isDate } from "./../object/isDate";
+import { isDate } from './objectType'
 import { date } from "./date";
 import { nextYears } from "./nextYears";
 import { nextMonths } from "./nextMonths";

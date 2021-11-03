@@ -2,6 +2,8 @@
 import cleanup from 'rollup-plugin-cleanup';
 import typescript from '@rollup/plugin-typescript';
 import scss from 'rollup-plugin-scss'
+
+import "./buildEntry";
 export default [{
   // 核心选项
   /**
@@ -57,7 +59,7 @@ export default [{
         strict: true,
       }
     }),
-  ]
+  ],
   // output: {  // 必须 (如果要输出多个，可以是一个数组)
   //   // 核心选项
   //   file,    // 必须
@@ -81,6 +83,9 @@ export default [{
   //   indent,
   //   strict
   // },
+  watch: {
+    exclude: 'node_modules/**'
+  }
 }, {
   input: "src/json/index.js",     // 必须
   // external,

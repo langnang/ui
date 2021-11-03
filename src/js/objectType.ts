@@ -20,6 +20,12 @@ export const isArray = (obj: any) => objectType(obj) === 'array'
  */
 export const isBoolean = (obj: any) => objectType(obj) === 'boolean'
 /**
+ * 检测日期
+ * @param {*} obj
+ * @returns {Boolean}
+ */
+export const isDate = (obj: any) => objectType(obj) === 'date'
+/**
  * 检测函数
  * @param {*} obj
  * @returns {Boolean}

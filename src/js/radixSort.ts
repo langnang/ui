@@ -6,7 +6,7 @@
  * @param  array 待排序数组
  * @param  maxDigit 最大位数
  */
-export const radixSort = array => {
+export const radixSort = (array: number[]) => {
     const maxDigit = (num, digit = 1) => {
         if (num <= -10 || num >= 10) {
             digit = maxDigit(num / 10, ++digit);
@@ -17,7 +17,7 @@ export const radixSort = array => {
     var mod = 10;
     var dev = 1;
     var counter = [];
-    for (var i = 0; i < digit; i++ , dev *= 10, mod *= 10) {
+    for (var i = 0; i < digit; i++, dev *= 10, mod *= 10) {
         for (var j = 0; j < array.length; j++) {
             var bucket = parseInt((array[j] % mod) / dev);
             if (counter[bucket] == null) {

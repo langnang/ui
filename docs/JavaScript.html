@@ -12,11 +12,14 @@
     <script src="./../dist/json/ln.js"></script>
     <script>
       const app = document.getElementById('app');
-      let html = '<ul>';
+      let html = '<table border="1px" width="100%">';
+      html += '<tr><th>方法</th><th>说明</th></tr>';
       ln.forEach(ln, function (v, k) {
-        html += `<li>${k} ${lnDocs[k]?.description || ''} </li>`;
+        html += `<tr><td>${k}</td><td> ${
+          lnDocs[k]?.description || ''
+        } </td></tr>`;
       });
-      html += '</ul>';
+      html += '</table>';
       app.innerHTML = html;
     </script>
   </body>

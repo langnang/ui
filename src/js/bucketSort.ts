@@ -4,7 +4,7 @@
  */
 export const bucketSort = array => {
     // 声明一个空桶, 将数据压入桶中
-    const bucket = new Array(Math.max(...array) + 1);
+    const bucket: any = new Array(Math.max(...array) + 1);
     bucket.fill(0);
     array.forEach((one) => {
         bucket[one]++
@@ -16,6 +16,5 @@ export const bucketSort = array => {
             newArr.push(index)
         }
     })
-
     return newArr;
 }
