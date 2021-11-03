@@ -1,1 +1,0 @@
-export const isTrue = obj => obj === true;

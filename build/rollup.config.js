@@ -18,22 +18,24 @@ export default {
   // moduleContext,
   // legacy,
   output: [
-    ...[{
-      file: './dist/js/ln.js',
-      format: 'umd',
-    },
-    {
-      file: './dist/js/ln.amd.js',
-      format: 'amd',
-    },
-    {
-      file: './dist/js/ln.cjs.js',
-      format: 'cjs',
-    },
-    {
-      file: './dist/js/ln.es.js',
-      format: 'es',
-    }].map(v => {
+    ...[
+      {
+        file: './dist/js/ln.js',
+        format: 'umd',
+      },
+      {
+        file: './dist/js/ln.amd.js',
+        format: 'amd',
+      },
+      {
+        file: './dist/js/ln.cjs.js',
+        format: 'cjs',
+      },
+      {
+        file: './dist/js/ln.es.js',
+        format: 'es',
+      }
+    ].map(v => {
       return {
         ...v,
         name: 'ln',
