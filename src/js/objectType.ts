@@ -3,10 +3,7 @@
  * @param {*} obj
  * @returns {String}
  */
-export const objectType = (obj: any) => {
-  let type = Object.prototype.toString.call(obj)
-  return type.substring(8, type.length - 1).toLowerCase()
-}
+export const objectType = (obj: any) => Object.prototype.toString.call(obj).substring(8, Object.prototype.toString.call(obj).length - 1).toLowerCase()
 /**
  * 检测数组
  * @param {*} obj

@@ -13,11 +13,13 @@
     <script>
       const app = document.getElementById('app');
       let html = '<table border="1px" width="100%">';
-      html += '<tr><th>方法</th><th>说明</th></tr>';
+      let index = 1;
+      html += '<tr><th>序号</th><th>方法</th><th>说明</th></tr>';
       ln.forEach(ln, function (v, k) {
-        html += `<tr><td>${k}</td><td> ${
+        html += `<tr><td>${index}</td><td>${k}</td><td> ${
           lnDocs[k]?.description || ''
         } </td></tr>`;
+        index++;
       });
       html += '</table>';
       app.innerHTML = html;
