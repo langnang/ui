@@ -1,0 +1,28 @@
+{
+  "name": "@langnang/ui",
+  "version": "0.0.1",
+  "description": "A simple ui for html5.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "rollup:build": "rollup --config build/rollup.config.js",
+    "rollup:watch": "rollup --config build/rollup.config.js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/langnang/ui.git"
+  },
+  "keywords": [
+    "langnang",
+    "ui"
+  ],
+  "author": "Langnang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/langnang/ui/issues"
+  },
+  "homepage": "https://github.com/langnang/ui#readme"
+}
