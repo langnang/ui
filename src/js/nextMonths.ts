@@ -3,10 +3,10 @@
  * @param {*} date 
  * @param {*} n 
  */
-export const nextMonths = (date = new Date(), n = 1) => {
+export const nextMonths = (date = new Date(), n: number = 1) => {
     date = new Date(date);
-    let year = date.getFullYear();
-    let month = date.getMonth();
+    let year: number = date.getFullYear();
+    let month: number = date.getMonth();
     month += n;
     if (month > 11) {
         year += parseInt(month / 12);

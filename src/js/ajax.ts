@@ -82,6 +82,3 @@ export const ajax = (option) => {
     if (!map.has(mode)) mode = "native";
     return map.get(mode)(option);
 };
-
-const ajaxByPromise = () => {
-};
