@@ -6,5 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript | @langnang/ui</title>
   </head>
-  <body></body>
+  <body>
+    <div id="app"></div>
+    <script src="./../dist/js/ln.js"></script>
+    <script src="./../dist/json/ln.js"></script>
+    <script>
+      const app = document.getElementById('app');
+      let html = '<ul>';
+      ln.forEach(ln, function (v, k) {
+        html += `<li>${k} ${lnDocs[k]?.description || ''} </li>`;
+      });
+      html += '</ul>';
+      app.innerHTML = html;
+    </script>
+  </body>
 </html>

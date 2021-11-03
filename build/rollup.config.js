@@ -2,7 +2,7 @@
 import cleanup from 'rollup-plugin-cleanup';
 import typescript from '@rollup/plugin-typescript';
 import scss from 'rollup-plugin-scss'
-export default {
+export default [{
   // 核心选项
   /**
    * 输入(input -i/--input)
@@ -81,4 +81,39 @@ export default {
   //   indent,
   //   strict
   // },
-};
+}, {
+  input: "src/json/index.js",     // 必须
+  // external,
+  plugins: [
+    cleanup(),
+  ],
+  output: [
+    ...[
+      {
+        file: './dist/json/ln.js',
+        format: 'umd',
+      },
+      {
+        file: './dist/json/ln.amd.js',
+        format: 'amd',
+      },
+      {
+        file: './dist/json/ln.cjs.js',
+        format: 'cjs',
+      },
+      {
+        file: './dist/json/ln.es.js',
+        format: 'es',
+      }
+    ].map(v => {
+      return {
+        ...v,
+        name: 'lnDocs',
+        // String 是要使用的缩进字符串，对于需要缩进代码的格式（amd，iife，umd）。也可以是false（无缩进）或true（默认 - 自动缩进）
+        indent: false,
+        // true或false（默认为true） - 是否在生成的非ES6软件包的顶部包含'use strict'pragma。严格来说（geddit？），ES6模块始终都是严格模式，所以你应该没有很好的理由来禁用它。
+        strict: true,
+      }
+    })
+  ]
+}];
