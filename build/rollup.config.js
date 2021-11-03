@@ -5,7 +5,7 @@ export default {
    * 输入(input -i/--input)
    * String 这个包的入口点 (例如：你的 main.js 或者 app.js 或者 index.js)
    */
-  input: "src/main.js",     // 必须
+  input: "src/main.ts",     // 必须
   // external,
   // plugins,
 
