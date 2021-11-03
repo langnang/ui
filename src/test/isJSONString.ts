@@ -1,4 +1,4 @@
-import {isJSONString} from "./index";
+import { isJSONString } from "./../js";
 
 
 console.log(isJSONString("123"));

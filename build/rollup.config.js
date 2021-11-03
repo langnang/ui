@@ -1,4 +1,6 @@
 // rollup.config.js
+import cleanup from 'rollup-plugin-cleanup';
+import typescript from '@rollup/plugin-typescript';
 export default {
   // 核心选项
   /**
@@ -7,7 +9,10 @@ export default {
    */
   input: "src/main.ts",     // 必须
   // external,
-  // plugins,
+  plugins: [
+    cleanup(),
+    typescript()
+  ],
 
   // // 额外选项
   // onwarn,

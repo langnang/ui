@@ -1,4 +1,4 @@
-import {iniToJSON} from "./index";
+import { iniToJSON } from "./../js";
 
 const ini = `
 [Node_1]

@@ -8,13 +8,12 @@ interface Options {
 }
 
 /**
- * @name toTree
- * @desc 将数组转换为树状数组
+ * 将数组转换为树状数组
  * @param array {Array}
  * @param key {String}
  * @param options {Object}
  */
-export const toTree = (array: any[]) => {
+export const arrayToTree = (array: any[]) => {
     const _array: any[] = [...array];
     return tree([...array], maxDepth(_array))[0].children;
 };
@@ -33,7 +32,7 @@ const maxDepth = (array: Object[]) =>
  * @param depth 当前深度
  * @param origin 原始数组
  */
-const tree = (origin: any[], depth: number, array: any[] = []) => {
+const tree = (origin: any, depth: number, array: any = []) => {
     // 深度到达最小值时返回
     if (depth == 0) {
         return array;
@@ -41,7 +40,7 @@ const tree = (origin: any[], depth: number, array: any[] = []) => {
     // 过滤当前深度下的所有元素
     let result: any[] = origin.filter((v: any) => v.depth == depth);
     // 根据过滤的元素生成父类，检测原型中是否存在该父类，存在就合并元素
-    result = result.reduce((total: any[], value: any) => {
+    result = result.reduce((total: any, value: any) => {
         // 查找其父元素所在位置
         let index: number = total.findIndex(
             (item: any) => item.name == value.parent

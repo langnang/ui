@@ -1,5 +1,5 @@
 /**
- * 
+ * 检测 False
  * @param {*} obj 
  * @returns {Boolean}
  */

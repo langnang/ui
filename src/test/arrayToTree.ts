@@ -1,16 +1,15 @@
-import {toTree} from "./index";
-import {isJSONString} from "../isJSONString";
+import { arrayToTree, isJSONString } from "./../js";
 
 let array = [
-    {name: 'Mine',},
-    {name: '开发',},
-    {name: '开发>>前端',},
-    {name: '开发>>前端>>HTML',},
-    {name: '开发>>前端>>CSS',},
-    {name: '开发>>前端>>JavaScript',},
-    {name: '开发>>后端',},
-    {name: '开发>>后端>>PHP',},
-    {name: '开发>>后端>>ASP.NetCore',},
+    { name: 'Mine', },
+    { name: '开发', },
+    { name: '开发>>前端', },
+    { name: '开发>>前端>>HTML', },
+    { name: '开发>>前端>>CSS', },
+    { name: '开发>>前端>>JavaScript', },
+    { name: '开发>>后端', },
+    { name: '开发>>后端>>PHP', },
+    { name: '开发>>后端>>ASP.NetCore', },
 ];
 
 array = array.map(v => {
@@ -29,4 +28,4 @@ array = array.map(v => {
         depth: name_spt.length,
     }
 })
-console.log(JSON.stringify(toTree(array)));
+console.log(JSON.stringify(arrayToTree(array)));

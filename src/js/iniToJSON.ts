@@ -1,25 +1,27 @@
 /**
  * ini 转换为 JSON
- * @param ini
+ * @param {String} iniString
  */
-export const iniToJSON = (ini: string) => {
-    const nodeArray = ini.split("[");
+export const iniToJSON = (iniString: string) => {
+    const nodeArray = iniString.split("[");
     return nodeArray.reduce((total: any, value: string) => {
         const node: string = getNode(value);
         const key_value: any = getKeyValue(value);
         if (node == "") {
-            return {...total, ...key_value};
+            return { ...total, ...key_value };
         } else {
             total[node] = key_value;
             return total;
         }
     }, {})
 }
+
 // 节点
 const getNode = (str: string) => {
     let node = str.substring(str.indexOf("["), str.indexOf("]"));
     return node;
 }
+
 // 键值对
 const getKeyValue = (str: string) => {
     let array = str.substring(str.indexOf("]") + 1).split(/[\r\n]/g);

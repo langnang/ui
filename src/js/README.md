@@ -242,3 +242,4 @@
 - [Ramda]()
 - [Sugar]()
 - [Voca]()
+- [33 个非常实用的 JavaScript 一行代码，建议收藏！](https://juejin.cn/post/7025771605422768159)
