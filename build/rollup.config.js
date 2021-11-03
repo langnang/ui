@@ -1,6 +1,7 @@
 // rollup.config.js
 import cleanup from 'rollup-plugin-cleanup';
 import typescript from '@rollup/plugin-typescript';
+import scss from 'rollup-plugin-scss'
 export default {
   // 核心选项
   /**
@@ -11,7 +12,13 @@ export default {
   // external,
   plugins: [
     cleanup(),
-    typescript()
+    typescript(),
+    scss({
+      output: true,
+
+      // Filename to write all styles to
+      output: './dist/css/ln.css',
+    }),
   ],
 
   // // 额外选项
