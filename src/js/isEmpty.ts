@@ -1,6 +1,5 @@
 
-import { isNull } from './isNull';
-import { isUndefined } from './isUndefined';
+import { isNull, isUndefined } from './objectType';
 /**
  * 检测为空
  * @param {*} object 

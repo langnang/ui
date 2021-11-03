@@ -46,3 +46,17 @@ export const isObject = (obj: any) => objectType(obj) === 'object'
  * @returns {Boolean}
  */
 export const isString = (obj: any) => objectType(obj) === 'string'
+/**
+ * 检测Undefined
+ * @param {*} obj 
+ * @return {Boolean}
+ */
+
+export const isUndefined = (obj: any) => objectType(obj) === 'undefined'
+/**
+ * 检测Null
+ * @param {*} obj 
+ * @return {Boolean}
+ */
+
+export const isNull = (obj: any) => objectType(obj) === 'null'
