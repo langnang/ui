@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JavaScript | @langnang/ui</title>
+    <link rel="stylesheet" href="./../../dist/css/ln.css" />
   </head>
   <body>
     <div id="app"></div>
@@ -15,7 +16,7 @@
       let html = '<table border="1px" width="100%">';
       let index = 1;
       html +=
-        "<tr><th style='width:60px;'>序号</th><th>方法</th><th>说明</th></tr>";
+        "<tr><th style='width:60px;'>序号</th><th style='width:240px;'>方法</th><th>说明</th></tr>";
       ln.forEach(ln, function (v, k) {
         html += `<tr><td>${index}</td><td>${k}</td><td> ${
           __ln__["__" + k + "__"]?.description || ""

@@ -5,6 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Button | @langnang/ui</title>
+    <link rel="stylesheet" href="./../../../dist/css/ln.css" />
   </head>
-  <body></body>
+  <body>
+    <div id="app">
+      <h2>基本按钮</h2>
+      <button class="ln-btn is-primary">按钮</button>
+      <button class="ln-btn" style="">按钮</button>
+      <button class="ln-btn">按钮</button>
+      <button class="ln-btn">按钮</button>
+      <button class="ln-btn">按钮</button>
+      <button class="ln-btn">按钮</button>
+      <button class="ln-btn">按钮</button>
+    </div>
+    <script src="./../../../dist/js/ln.js"></script>
+    <script src="./../main.js"></script>
+    <script>
+      console.log(getActiveCssRules("btn"));
+      const rules = getActiveCssRules("btn");
+      let htmlInner = "";
+      document.getElementById("app");
+      document.getElementById("app").innerHTML = rules.reduce(
+        (total, rule) =>
+          total +
+          `<button class="${rule.selectorText.substr(1).replace(/\./g, " ")}">${
+            rule.selectorText
+          }</button><br/>`,
+        ""
+      );
+    </script>
+  </body>
 </html>

@@ -2,13 +2,13 @@
  * @name Button
  * @desc 按钮
  */
-.ln-btn {
+.#{$g-pre}btn {
   padding: 8px 15px;
 
   border-radius: 4px;
   border-width: 1px;
 
-  font-size: 16px;
+  font-size: 1rem;
   text-align: center;
   /* 伪类 */
   &:focus {
@@ -49,14 +49,14 @@
   /* 色彩类 */
   &.is-primary {
     color: #fff;
-    background-color: #409eff;
-    border-color: #409eff;
+    background-color: $Primary;
+    border-color: $Primary;
   }
 
   &.is-success {
     color: #fff;
-    background-color: #67c23a;
-    border-color: #67c23a;
+    background-color: $Success;
+    border-color: $Success;
   }
 
   &.is-info {
@@ -77,9 +77,9 @@
     border-color: #f56c6c;
   }
 
+  // 尺寸类
+  &.is-sm {
+    font-size: $sm;
+  }
   /* 特效类 */
 }
-
-
-
-

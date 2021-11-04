@@ -1,0 +1,5 @@
+@mixin color($name, $hex) {
+  @include background-color($name, $hex);
+  color: color.adjust($hex, $blackness: 90%);
+  @include border-color($name, color.adjust($hex, $saturation: 80%));
+}
