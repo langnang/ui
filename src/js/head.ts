@@ -22,4 +22,8 @@ export const head = (array, n = 1, mode = "prototype") => {
 
   return _map.get(mode)(array, n);
 };
-export const __head__ = {}
+export const __head__ = {
+  description: "数组的前n个元素",
+
+}
+

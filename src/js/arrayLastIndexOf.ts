@@ -10,4 +10,7 @@ export const arrayLastIndexOf = (
   }
   return -1;
 };
-export const __arrayLastIndexOf__ = {}
+export const __arrayLastIndexOf__ = {
+  description: "Array.prototype.lastIndexOf",
+
+}

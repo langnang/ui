@@ -26,4 +26,8 @@ export const insertionSort = (array) => {
   return array;
 }
 
-export const __insertionSort__ = {}
+export const __insertionSort__ = {
+  description: "插入排序",
+
+}
+

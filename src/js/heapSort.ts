@@ -1,3 +1,8 @@
+/**
+ * 堆排序
+ * @param array 
+ * @returns 
+ */
 export const heapSort = array => {
   function maxHeapify(array, index, heapSize) {
     var iMax,
@@ -42,4 +47,8 @@ export const heapSort = array => {
 
 }
 
-export const __heapSort__ = {}
+export const __heapSort__ = {
+  description: "堆排序",
+
+}
+

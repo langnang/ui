@@ -6,4 +6,7 @@ export const arrayValues = (array) => {
   }
   return res;
 };
-export const __arrayValues__ = {}
+export const __arrayValues__ = {
+  description: "Array.prototype.values",
+
+}

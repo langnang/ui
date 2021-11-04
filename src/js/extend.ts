@@ -1,5 +1,5 @@
 /**
- * @desc 混合属性到目标对象
+ * 混合属性到目标对象
  */
 export const extend = (to, _from) => {
   for (var key in _from) {
@@ -7,4 +7,8 @@ export const extend = (to, _from) => {
   }
   return to
 }
-export const __extend__ = {}
+export const __extend__ = {
+  description: "混合属性到目标对象",
+
+}
+

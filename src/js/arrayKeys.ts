@@ -7,4 +7,7 @@ export const arrayKeys = (array) => {
   return res;
 };
 
-export const __arrayKeys__ = {}
+export const __arrayKeys__ = {
+  description: "Array.prototype.keys",
+
+}

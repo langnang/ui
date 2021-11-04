@@ -4,4 +4,8 @@
  * @returns {Boolean}
  */
 export const isTrue = (obj: any) => obj === true;
-export const __isTrue__ = {}
+export const __isTrue__ = {
+  description: "检测True",
+
+}
+

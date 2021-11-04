@@ -1,6 +1,5 @@
 /**
- * @name elementIsVisibleInViewport
- * @desc 如果指定的元素在视区中可见, 则返回true, 否则为false。
+ * 检测指定的元素在视区中是否可见
  * @param {*} el 
  * @param {*} partiallyVisible 
  */
@@ -16,4 +15,8 @@ export const isVisibleinViewport = (el, partiallyVisible = false) => {
     ((left > 0 && left < innerWidth) || (right > 0 && right < innerWidth)) :
     top >= 0 && left >= 0 && bottom <= innerHeight && right <= innerWidth;
 };
-export const __isVisibleinViewport__ = {}
+export const __isVisibleinViewport__ = {
+  description: "检测指定的元素在视区中是否可见",
+
+}
+

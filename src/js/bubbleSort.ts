@@ -20,4 +20,6 @@ export const bubbleSort = (array) => {
   }
   return array;
 };
-export const __bubbleSort__ = {}
+export const __bubbleSort__ = {
+  description: "冒泡排序",
+}

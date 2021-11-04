@@ -15,4 +15,8 @@ export const throttle = (fn) => {
     }, 500);
   };
 };
-export const __throttle__ = {}
+export const __throttle__ = {
+  description: "节流",
+
+}
+

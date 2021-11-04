@@ -4,4 +4,8 @@
  * @param {*} num 
  */
 export const isOdd = num => num % 2 === 1;
-export const __isOdd__ = {}
+export const __isOdd__ = {
+  description: "检测是否是奇数",
+
+}
+

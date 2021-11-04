@@ -12,5 +12,9 @@ export const debounce = (fn) => {
     }, 500);
   };
 };
-export const __debounce__ = {}
+export const __debounce__ = {
+  description: "防抖",
+
+}
+
 

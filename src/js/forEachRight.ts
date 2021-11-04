@@ -1,5 +1,5 @@
 /**
- * @description 反向遍历
+ * 反向遍历
  */
 
 export const forEachRight = (object, callback) => {
@@ -11,4 +11,8 @@ export const forEachRight = (object, callback) => {
     callback(object[array[k]], array[k]);
   }
 }
-export const __forEachRight__ = {}
+export const __forEachRight__ = {
+  description: "反向遍历",
+
+}
+

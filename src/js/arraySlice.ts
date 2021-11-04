@@ -24,4 +24,7 @@ export const arraySlice = (array, begin = 0, end = array.length) => {
   }
   return _arr;
 };
-export const __arraySlice__ = {}
+export const __arraySlice__ = {
+  description: "Array.prototype.slice",
+
+}

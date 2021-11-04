@@ -7,4 +7,7 @@ export const arrayFind = (array, callback, thisArg) => {
   return undefined;
 };
 
-export const __arrayFind__ = {}
+export const __arrayFind__ = {
+  description: "Array.prototype.find"
+
+}

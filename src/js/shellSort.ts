@@ -29,4 +29,8 @@ export const shellSort = array => {
 }
 
 
-export const __shellSort__ = {}
+export const __shellSort__ = {
+  description: "希尔排序",
+
+}
+

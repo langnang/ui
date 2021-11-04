@@ -3,4 +3,8 @@
  * @param {Array} array 
  */
 export const reverse = array => array.reverse()
-export const __reverse__ = {}
+export const __reverse__ = {
+  description: "反转数组",
+
+}
+

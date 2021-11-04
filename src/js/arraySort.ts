@@ -12,4 +12,7 @@ export const arraySort = (array, compareFunction = (a, b) => a - b) => {
   }
   return array;
 };
-export const __arraySort__ = {}
+export const __arraySort__ = {
+  description: "Array.prototype.sort",
+
+}

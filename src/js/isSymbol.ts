@@ -1,8 +1,12 @@
+import { objectType } from "./objectType"
 /**
- * @name isSymbol
- * @desc 判断是否是Symbol
+ * 检测Symbol
  * @param {*} object 
  * @return {Boolean}
  */
-export const isSymbol = object => Object.prototype.toString.call(object) === '[object Symbol]'
-export const __isSymbol__ = {}
+export const isSymbol = (obj: any) => objectType(obj) === 'symbol'
+export const __isSymbol__ = {
+  description: "检测Symbol",
+
+}
+

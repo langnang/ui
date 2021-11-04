@@ -13,4 +13,8 @@ export const isArraySorted = arr => {
     else if ((val - arr[i + 1]) * direction > 0) return 0;
   }
 }
-export const __isArraySorted__ = {}
+export const __isArraySorted__ = {
+  description: "检测数据是否已排序",
+
+}
+

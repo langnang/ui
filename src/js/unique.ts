@@ -1,7 +1,10 @@
 /**
- * @name unique
- * @desc 返回数组的所有不同值（去重）
+ * 数组去重
  * @param {Array} arr 
  */
-export const unique = arr => [...new Set(arr)];
-export const __unique__ = {}
+export const unique = (arr: []) => [...new Set(arr)];
+export const __unique__ = {
+  description: "数组去重",
+
+}
+

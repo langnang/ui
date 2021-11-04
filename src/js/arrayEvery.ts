@@ -9,4 +9,7 @@ export const arrayEvery = (array, callback, thisArg) => {
   return truth;
 };
 
-export const __arrayEvery__ = {}
+export const __arrayEvery__ = {
+  description: "Array.prototype.every"
+
+}

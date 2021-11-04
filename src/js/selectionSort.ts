@@ -1,6 +1,5 @@
 /**
- * @name selectionSort
- * @desc 选择排序
+ * 选择排序
  * @param {Array} array
  * @return {Array}
  * @date 2019-07-06 
@@ -29,4 +28,8 @@ export const selectionSort = (array) => {
   }
   return array;
 }
-export const __selectionSort__ = {}
+export const __selectionSort__ = {
+  description: "选择排序",
+
+}
+

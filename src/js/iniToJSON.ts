@@ -36,4 +36,7 @@ const getKeyValue = (str: string) => {
 
 }
 
-export const __iniToJSON__ = {}
+export const __iniToJSON__ = {
+  description: "ini 转换为 JSON",
+
+}

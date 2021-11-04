@@ -8,4 +8,7 @@ export const arraySome = (array, callback, thisArg) => {
   }
   return falsy;
 };
-export const __arraySome__ = {}
+export const __arraySome__ = {
+  description: "Array.prototype.some",
+
+}

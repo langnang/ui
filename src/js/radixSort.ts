@@ -37,4 +37,8 @@ export const radixSort = (array: number[]) => {
   }
   return array;
 }
-export const __radixSort__ = {}
+export const __radixSort__ = {
+  description: "基数排序",
+
+}
+

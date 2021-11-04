@@ -1,6 +1,6 @@
 import { format } from "./format";
 import { timestamp } from "./timestamp";
-import { isDate } from './objectType'
+import { isDate } from './isDate'
 import { date } from "./date";
 import { nextYears } from "./nextYears";
 import { nextMonths } from "./nextMonths";
@@ -46,4 +46,8 @@ export const timeline = (
   }
   return result;
 };
-export const __timeline__ = {}
+export const __timeline__ = {
+  description: "返回起止时间中单位时间的连续时间数组",
+
+}
+

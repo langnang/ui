@@ -14,7 +14,8 @@
       const app = document.getElementById("app");
       let html = '<table border="1px" width="100%">';
       let index = 1;
-      html += "<tr><th>序号</th><th>方法</th><th>说明</th></tr>";
+      html +=
+        "<tr><th style='width:60px;'>序号</th><th>方法</th><th>说明</th></tr>";
       ln.forEach(ln, function (v, k) {
         html += `<tr><td>${index}</td><td>${k}</td><td> ${
           __ln__["__" + k + "__"]?.description || ""

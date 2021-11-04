@@ -3,4 +3,8 @@
  * @param {*} el 
  */
 export const queryAll = el => document.querySelectorAll(el);
-export const __queryAll__ = {}
+export const __queryAll__ = {
+  description: "DOM 选择器",
+
+}
+

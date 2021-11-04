@@ -5,4 +5,6 @@
  * @param {*} pi 
  */
 export const areaofCircle = (radius, pi = Math.PI) => radius * radius * pi
-export const __areaofCircle__ = {}
+export const __areaofCircle__ = {
+  description: "圆的面积"
+}

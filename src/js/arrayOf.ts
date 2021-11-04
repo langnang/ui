@@ -4,4 +4,7 @@
  */
 
 export const arrayOf = (...elements) => elements;
-export const __arrayOf__ = {}
+export const __arrayOf__ = {
+  description: "Array.of.",
+
+}

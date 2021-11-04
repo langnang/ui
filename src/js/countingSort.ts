@@ -19,4 +19,8 @@ export const countingSort = array => {
   }
   return B;
 }
-export const __countingSort__ = {}
+export const __countingSort__ = {
+  description: "计数排序",
+
+}
+

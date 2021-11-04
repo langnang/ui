@@ -4,4 +4,7 @@ export const arrayReduceRight = (array, callback, initialValue = array[0]) => {
   }
   return initialValue;
 };
-export const __arrayReduceRight__ = {}
+export const __arrayReduceRight__ = {
+  description: "Array.prototype.reduceRight",
+
+}

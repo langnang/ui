@@ -16,4 +16,8 @@ export const nextMonths = (date = new Date(), n: number = 1) => {
   date.setMonth(month);
   return date;
 }
-export const __nextMonths__ = {}
+export const __nextMonths__ = {
+  description: "指定日期的N月后",
+
+}
+

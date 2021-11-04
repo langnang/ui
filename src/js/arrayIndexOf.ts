@@ -7,4 +7,7 @@ export const arrayIndexOf = (array, searchElement, fromIndex = 0) => {
   return -1;
 };
 
-export const __arrayIndexOf__ = {}
+export const __arrayIndexOf__ = {
+  description: "Array.prototype.indexOf",
+
+}

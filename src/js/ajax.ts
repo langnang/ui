@@ -84,5 +84,5 @@ export const ajax = (option) => {
 };
 
 export const __ajax__ = {
-  description: "AJAX"
+  description: "AJAX 的封装"
 }

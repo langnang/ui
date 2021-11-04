@@ -10,4 +10,8 @@ export const nextYears = (date, n = 1) => {
   date.setFullYear(year);
   return date;
 }
-export const __nextYears__ = {}
+export const __nextYears__ = {
+  description: "指定日期的N年后",
+
+}
+

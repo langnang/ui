@@ -10,4 +10,7 @@ export const arrayUnshift = (array, ...values) => {
   array = _arr;
   return array.length;
 };
-export const __arrayUnshift__ = {}
+export const __arrayUnshift__ = {
+  description: "Array.prototype.unshift",
+
+}

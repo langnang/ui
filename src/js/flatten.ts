@@ -1,10 +1,9 @@
 /**
- * @name flatten
- * @desc 将数组展平到指定的深度。
+ * 将数组展平到指定的深度。
  * @param {Array} arr
  */
 
-import { isArray } from './objectType'
+import { isArray } from './isArray'
 export const flatten = (arr, depth = 1) => {
   if (depth >= 1) {
     return arr.reduce(
@@ -20,4 +19,7 @@ export const flatten = (arr, depth = 1) => {
   }
 };
 
-export const __flatten__ = {}
+export const __flatten__ = {
+  description: "将数组展平到指定的深度",
+
+}

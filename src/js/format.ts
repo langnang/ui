@@ -36,4 +36,8 @@ export const format = (date, fm) => {
 
   return fm;
 }
-export const __format__ = {}
+export const __format__ = {
+  description: "格式化时间",
+
+}
+

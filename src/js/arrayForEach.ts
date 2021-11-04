@@ -10,4 +10,8 @@ export const arrayForEach = (array, callback, thisArg) => {
   }
 };
 
-export const __arrayForEach__ = {}
+export const __arrayForEach__ = {
+  description: "Array.prototype.forEach",
+
+
+}

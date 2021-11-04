@@ -5,4 +5,8 @@ import { timestamp } from './timestamp'
  * @param {*} n 
  */
 export const nextSeconds = (date, n = 1) => new Date(timestamp(date) + n * 1000);
-export const __nextSeconds__ = {}
+export const __nextSeconds__ = {
+  description: "指定日期的N秒后",
+
+}
+

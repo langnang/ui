@@ -5,4 +5,6 @@ export const arrayConcat = (array, ...arrays) => {
   return array;
 };
 
-export const __arrayConcat__ = {}
+export const __arrayConcat__ = {
+  description: "Array.prototype.concat"
+}

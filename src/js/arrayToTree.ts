@@ -94,4 +94,7 @@ const tree = (origin: any, depth: number, array: any = []) => {
     result
   );
 };
-export const __arrayToTree__ = {}
+export const __arrayToTree__ = {
+  description: "数组转树状结构",
+
+}

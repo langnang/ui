@@ -5,4 +5,7 @@ export const arrayFill = (array, value, start = 0, end = array.length - 1) => {
   return array;
 };
 
-export const __arrayFill__ = {}
+export const __arrayFill__ = {
+  description: "Array.prototype.fill"
+
+}

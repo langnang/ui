@@ -6,4 +6,7 @@ export const arrayMap = (array, callback, thisArg) => {
   }
   return res;
 };
-export const __arrayMap__ = {}
+export const __arrayMap__ = {
+  description: "Array.prototype.map",
+
+}

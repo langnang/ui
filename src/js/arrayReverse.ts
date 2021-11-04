@@ -9,4 +9,7 @@ export const arrayReverse = (array) => {
   }
   return _array;
 };
-export const __arrayReverse__ = {}
+export const __arrayReverse__ = {
+  description: "Array.prototype.reverse",
+
+}

@@ -13,4 +13,8 @@ export const isJSONString = (jsonString: string) => {
   return false;
 }
 
-export const __isJSONString__ = {}
+export const __isJSONString__ = {
+  description: "检测JSON字符串",
+
+}
+

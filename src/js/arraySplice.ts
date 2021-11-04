@@ -49,4 +49,7 @@ export const arraySplice = (array, start = 0, deleteCount = 0, ...items) => {
   array = _array;
   return delArray;
 };
-export const __arraySplice__ = {}
+export const __arraySplice__ = {
+  description: "Array.prototype.splice",
+
+}

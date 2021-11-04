@@ -10,4 +10,7 @@ export const arrayJoin = (array, separator = ",") => {
   return prefix + suffix;
 };
 
-export const __arrayJoin__ = {}
+export const __arrayJoin__ = {
+  description: "Array.prototype.join",
+
+}

@@ -18,4 +18,7 @@ export const bucketSort = array => {
   })
   return newArr;
 }
-export const __bucketSort__ = {}
+export const __bucketSort__ = {
+  description: "桶排序",
+
+}

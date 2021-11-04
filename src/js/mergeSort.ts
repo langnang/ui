@@ -1,6 +1,5 @@
 /**
- * @name mergeSort
- * @desc 归并排序
+ * 归并排序
  * @param {Array} array
  * @return {Array}
  * @date 2019-07-06 
@@ -30,4 +29,8 @@ export const mergeSort = array => {
   return merge(mergeSort(array.slice(0, Math.floor(array.length / 2))), mergeSort(array.slice(Math.floor(array.length / 2))));
 }
 
-export const __mergeSort__ = {}
+export const __mergeSort__ = {
+  description: "归并排序",
+
+}
+

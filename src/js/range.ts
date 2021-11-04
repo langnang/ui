@@ -31,5 +31,9 @@ export const range = (date, type, opts) => {
   }
   return [];
 };
-export const __range__ = {}
+export const __range__ = {
+  description: "时间区段",
+
+}
+
 

@@ -1,3 +1,7 @@
+/**
+ * 返回手机类型
+ * @returns {String}
+ */
 export const mobileType = () => {
   var u = navigator.userAgent
   var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1 // g
@@ -11,4 +15,8 @@ export const mobileType = () => {
 
   return 'No Mobile';
 }
-export const __mobileType__ = {}
+export const __mobileType__ = {
+  description: "返回手机类型",
+
+}
+

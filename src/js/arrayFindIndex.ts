@@ -7,4 +7,6 @@ export const arrayFindIndex = (array, callback, thisArg) => {
   return -1;
 };
 
-export const __arrayFindIndex__ = {}
+export const __arrayFindIndex__ = {
+  description: "Array.prototype.findIndex"
+}

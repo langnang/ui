@@ -9,4 +9,7 @@ export const arrayFilter = (array, callback, thisArg) => {
   return res;
 };
 
-export const __arrayFilter__ = {}
+export const __arrayFilter__ = {
+  description: "Array.prototype.filter"
+
+}
