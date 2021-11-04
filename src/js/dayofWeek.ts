@@ -3,3 +3,4 @@
  * @param {*} date 
  */
 export const dayofWeek = date => date.getDay()
+export const __dayofWeek__ = {}

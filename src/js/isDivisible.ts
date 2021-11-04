@@ -5,3 +5,4 @@
  * @param {*} divisor 
  */
 export const isDivisible = (dividend, divisor) => dividend % divisor === 0;
+export const __isDivisible__ = {}

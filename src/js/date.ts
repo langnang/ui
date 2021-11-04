@@ -3,3 +3,4 @@
  * @param {*} args
  */
 export const date = (...args) => new Date(...args)
+export const __date__ = {}

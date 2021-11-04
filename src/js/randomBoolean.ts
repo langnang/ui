@@ -3,3 +3,4 @@
  * @returns {Boolean}
  */
 export const randomBoolean = () => Math.random() >= 0.5
+export const __randomBoolean__ = {}

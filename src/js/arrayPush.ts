@@ -4,3 +4,4 @@ export const arrayPush = (array, ...values) => {
   }
   return array.length;
 };
+export const __arrayPush__ = {}

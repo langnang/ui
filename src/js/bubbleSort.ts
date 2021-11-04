@@ -20,3 +20,4 @@ export const bubbleSort = (array) => {
   }
   return array;
 };
+export const __bubbleSort__ = {}

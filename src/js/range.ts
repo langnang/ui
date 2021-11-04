@@ -31,3 +31,5 @@ export const range = (date, type, opts) => {
   }
   return [];
 };
+export const __range__ = {}
+

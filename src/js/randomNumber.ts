@@ -5,3 +5,4 @@
  * @param {*} max 
  */
 export const randomNumber = (min, max = min + 1) => Math.random() * (max - min) + min;
+export const __randomNumber__ = {}

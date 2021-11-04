@@ -3,3 +3,4 @@
  * @param {*} date 
  */
 export const monday = date => new Date(date - (date.getDay() - 1) * 86400000)
+export const __monday__ = {}

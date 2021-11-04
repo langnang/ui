@@ -11,3 +11,4 @@ export const isDOM = (obj) =>
     objectType(obj) === "object" &&
     obj.nodetypeOf === 1 &&
     objectType(obj.nodeName) === "string";
+export const __isDOM__ = {}

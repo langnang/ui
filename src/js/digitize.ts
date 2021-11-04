@@ -3,3 +3,4 @@
  * @param {Number} num 
  */
 export const digitize = num => [...'' + num].map(i => parseInt(i));
+export const __digitize__ = {}

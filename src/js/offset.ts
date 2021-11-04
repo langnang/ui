@@ -4,3 +4,4 @@
  * @param {*} offset 
  */
 export const offset = (array, offset) => [...array.slice(offset), ...array.slice(0, offset)];
+export const __offset__ = {}

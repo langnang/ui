@@ -5,3 +5,4 @@
  * @param {*} pi 
  */
 export const areaofCircle = (radius, pi = Math.PI) => radius * radius * pi
+export const __areaofCircle__ = {}

@@ -5,3 +5,4 @@
  * @return {Boolean}
  */
 export const isSymbol = object => Object.prototype.toString.call(object) === '[object Symbol]'
+export const __isSymbol__ = {}

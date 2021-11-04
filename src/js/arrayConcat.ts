@@ -4,3 +4,5 @@ export const arrayConcat = (array, ...arrays) => {
   }
   return array;
 };
+
+export const __arrayConcat__ = {}

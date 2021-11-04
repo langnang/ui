@@ -5,7 +5,8 @@
 
 
 export const isPrimitive = object =>
-	typeof object === 'string' ||
-	typeof object === 'number' ||
-	typeof object === 'symbol' ||
-	typeof object === 'boolean'
+  typeof object === 'string' ||
+  typeof object === 'number' ||
+  typeof object === 'symbol' ||
+  typeof object === 'boolean'
+export const __isPrimitive__ = {}

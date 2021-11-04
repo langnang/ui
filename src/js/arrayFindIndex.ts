@@ -6,3 +6,5 @@ export const arrayFindIndex = (array, callback, thisArg) => {
   }
   return -1;
 };
+
+export const __arrayFindIndex__ = {}

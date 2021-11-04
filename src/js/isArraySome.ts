@@ -4,4 +4,5 @@
  * @param {*} arr 
  * @param {*} fn 
  */
-export const isSome = (array, fn = Boolean) => array.some(fn);
+export const isArraySome = (array, fn = Boolean) => array.some(fn);
+export const __isArraySome__ = {}

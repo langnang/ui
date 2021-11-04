@@ -4,3 +4,4 @@
  * @param {*} num 
  */
 export const isOdd = num => num % 2 === 1;
+export const __isOdd__ = {}

@@ -5,7 +5,8 @@
  * @param {Function} fn 
  */
 export const countBy = (array, fn) =>
-    array.map(typeof fn === 'function' ? fn : val => val).reduce((acc, val) => {
-        acc[`${val}`] = (acc[`${val}`] || 0) + 1;
-        return acc;
-    }, {});
+  array.map(typeof fn === 'function' ? fn : val => val).reduce((acc, val) => {
+    acc[`${val}`] = (acc[`${val}`] || 0) + 1;
+    return acc;
+  }, {});
+export const __countBy__ = {}

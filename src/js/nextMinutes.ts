@@ -5,3 +5,4 @@ import { timestamp } from './timestamp'
  * @param {*} n 
  */
 export const nextMinutes = (date, n = 1) => new Date(timestamp(date) + n * 60 * 1000);
+export const __nextMinutes__ = {}

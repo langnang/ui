@@ -6,3 +6,4 @@ export const arrayValues = (array) => {
   }
   return res;
 };
+export const __arrayValues__ = {}

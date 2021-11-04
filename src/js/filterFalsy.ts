@@ -3,3 +3,4 @@
  * @param {Array} array
  */
 export const filterFalsy = (array) => array.filter(Boolean);
+export const __filterFalsy__ = {}

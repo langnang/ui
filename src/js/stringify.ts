@@ -3,3 +3,4 @@
  * @param {*} object 
  */
 export const stringify = obj => JSON.stringify(obj);
+export const __stringify__ = {}

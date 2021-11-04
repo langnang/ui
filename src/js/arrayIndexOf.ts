@@ -6,3 +6,5 @@ export const arrayIndexOf = (array, searchElement, fromIndex = 0) => {
   }
   return -1;
 };
+
+export const __arrayIndexOf__ = {}

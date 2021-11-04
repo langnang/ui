@@ -5,3 +5,4 @@ import { timestamp } from './timestamp'
  * @param {*} n 
  */
 export const nextWeeks = (date, n = 1) => new Date(timestamp(date) + n * 7 * 24 * 60 * 60 * 1000);
+export const __nextWeeks__ = {}

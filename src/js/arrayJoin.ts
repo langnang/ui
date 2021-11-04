@@ -9,3 +9,5 @@ export const arrayJoin = (array, separator = ",") => {
   }
   return prefix + suffix;
 };
+
+export const __arrayJoin__ = {}

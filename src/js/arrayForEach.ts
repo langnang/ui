@@ -9,3 +9,5 @@ export const arrayForEach = (array, callback, thisArg) => {
     callback(array[key], key, array);
   }
 };
+
+export const __arrayForEach__ = {}

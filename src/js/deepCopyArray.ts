@@ -9,3 +9,4 @@ const deepCopyArrayByConcat = (array) => [].concat(array);
 const deepCopyArrayByString = (array) => JSON.parse(JSON.stringify(array));
 
 export const deepCopyArray = deepCopyArrayBySlice;
+export const __deepCopyArray__ = {}

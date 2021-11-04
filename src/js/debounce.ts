@@ -12,3 +12,5 @@ export const debounce = (fn) => {
     }, 500);
   };
 };
+export const __debounce__ = {}
+

@@ -5,4 +5,5 @@
  * @param {*} fn 
  */
 
-export const isNone = (array, fn = Boolean) => !array.every(fn);
+export const isArrayNone = (array, fn = Boolean) => !array.every(fn);
+export const __isArrayNone__ = {}

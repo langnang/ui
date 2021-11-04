@@ -9,3 +9,4 @@ export const arrayReverse = (array) => {
   }
   return _array;
 };
+export const __arrayReverse__ = {}

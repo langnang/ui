@@ -8,3 +8,5 @@ export const arrayFilter = (array, callback, thisArg) => {
   }
   return res;
 };
+
+export const __arrayFilter__ = {}

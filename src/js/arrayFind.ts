@@ -6,3 +6,5 @@ export const arrayFind = (array, callback, thisArg) => {
   }
   return undefined;
 };
+
+export const __arrayFind__ = {}

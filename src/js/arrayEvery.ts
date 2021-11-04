@@ -8,3 +8,5 @@ export const arrayEvery = (array, callback, thisArg) => {
   }
   return truth;
 };
+
+export const __arrayEvery__ = {}

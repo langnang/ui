@@ -9,3 +9,4 @@ export const euclideanAlgorithm = (originalA, originalB) => {
   const b = Math.abs(originalB);
   return (b === 0) ? a : euclideanAlgorithm(b, a % b);
 }
+export const __euclideanAlgorithm__ = {}

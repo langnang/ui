@@ -5,12 +5,13 @@ import { isLeapYear } from './isLeapYear';
  * @param {Number} end 
  */
 export const leapYears = (start, end) => {
-    if (start > end) { return []; }
-    let array = [];
-    for (var i = start; i <= end; i++) {
-        if (isLeapYear(i)) {
-            array.push(i)
-        }
+  if (start > end) { return []; }
+  let array = [];
+  for (var i = start; i <= end; i++) {
+    if (isLeapYear(i)) {
+      array.push(i)
     }
-    return array;
+  }
+  return array;
 }
+export const __leapYears__ = {}

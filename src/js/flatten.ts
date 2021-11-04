@@ -4,7 +4,7 @@
  * @param {Array} arr
  */
 
-import { isArray } from "./../object/isArray";
+import { isArray } from './objectType'
 export const flatten = (arr, depth = 1) => {
   if (depth >= 1) {
     return arr.reduce(
@@ -19,3 +19,5 @@ export const flatten = (arr, depth = 1) => {
     return arr.reduce((a, v) => a.concat(isArray(v) ? flatten(v, -1) : v), []);
   }
 };
+
+export const __flatten__ = {}

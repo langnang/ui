@@ -7,3 +7,4 @@
  */
 
 export const swap = (a, b) => [a, b] = [b, a]
+export const __swap__ = {}

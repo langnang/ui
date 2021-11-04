@@ -5,8 +5,9 @@
  * @param  {...any} args 
  */
 export const timeTaken = (fn, ...args) => {
-	console.time('timeTaken');
-	const result = fn(...args);
-	console.timeEnd('timeTaken');
-	return result;
+  console.time('timeTaken');
+  const result = fn(...args);
+  console.timeEnd('timeTaken');
+  return result;
 };
+export const __timeTaken__ = {}

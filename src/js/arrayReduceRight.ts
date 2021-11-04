@@ -4,3 +4,4 @@ export const arrayReduceRight = (array, callback, initialValue = array[0]) => {
   }
   return initialValue;
 };
+export const __arrayReduceRight__ = {}

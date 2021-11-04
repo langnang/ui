@@ -4,3 +4,4 @@ import { sum } from "./sum";
  * @param  {...any} nums 
  */
 export const avg = (...nums) => sum(...nums) / nums.length;
+export const __avg__ = {}

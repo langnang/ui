@@ -4,3 +4,4 @@
  * @param {*} y 
  */
 export const gcd = (x, y) => !y ? x : gcd(y, x % y);
+export const __gcd__ = {}

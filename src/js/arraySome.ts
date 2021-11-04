@@ -8,3 +8,4 @@ export const arraySome = (array, callback, thisArg) => {
   }
   return falsy;
 };
+export const __arraySome__ = {}

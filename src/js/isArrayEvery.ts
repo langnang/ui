@@ -5,3 +5,4 @@
  */
 
 export const isArrayEvery = (array, fn = Boolean) => array.every(fn);
+export const __isArrayEvery__ = {}

@@ -5,7 +5,8 @@
  * @param {*} callback 
  */
 export const forEachRightArray = (array, callback) =>
-    array
-        .slice(0)
-        .reverse()
-        .forEach(callback);
+  array
+    .slice(0)
+    .reverse()
+    .forEach(callback);
+export const __forEachRightArray__ = {}

@@ -49,3 +49,4 @@ export const arraySplice = (array, start = 0, deleteCount = 0, ...items) => {
   array = _array;
   return delArray;
 };
+export const __arraySplice__ = {}

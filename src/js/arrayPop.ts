@@ -3,3 +3,4 @@ export const arrayPop = (array) => {
   array.length = array.length - 1;
   return value;
 };
+export const __arrayPop__ = {}

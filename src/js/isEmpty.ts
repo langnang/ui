@@ -5,3 +5,4 @@ import { isNull, isUndefined } from './objectType';
  * @param {*} object 
  */
 export const isEmpty = object => isNull(object) || isUndefined(object)
+export const __isEmpty__ = {}

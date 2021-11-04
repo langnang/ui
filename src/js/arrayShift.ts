@@ -4,3 +4,4 @@ export const arrayShift = (array) => {
   array = arraySlice(array, 1 - array.length);
   return shift;
 };
+export const __arrayShift__ = {}

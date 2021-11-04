@@ -3,3 +3,4 @@
  * @param {*} date 
  */
 export const firstDayofMonth = date => new Date(date.getFullYear(), date.getMonth())
+export const __firstDayofMonth__ = {}

@@ -3,3 +3,4 @@
  * @param {*} date 
  */
 export const timestamp = date => new Date(date).getTime()
+export const __timestamp__ = {}

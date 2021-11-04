@@ -15,3 +15,4 @@ export const throttle = (fn) => {
     }, 500);
   };
 };
+export const __throttle__ = {}
