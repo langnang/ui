@@ -3,15 +3,24 @@
 $g-pre: "ln-";
 @import "./mixin/index.scss";
 @import "./constants/index.scss";
-@import "./element/index.scss";
-@import "modify/index";
 
-@import "skin/index";
-@import "layout/index";
+@import "./skin/index.scss";
+@import "./layout/index.scss";
+
+@import "./element/index.scss";
+@import "./modify/index.scss";
 @import "component/index";
 
+* {
+  // padding: 0;
+  // margin: 0;
+}
 html {
   font-size: 18px;
+}
+body {
+  // margin: 0;
+  // padding: 0;
 }
 
 .text-center {

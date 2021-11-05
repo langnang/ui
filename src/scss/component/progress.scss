@@ -6,7 +6,7 @@
   display: flex;
   width: 100%;
   border-radius: 9999px;
-  background-color: $Default;
+  background-color: $default;
 
   .#{$g-pre}progress__label {
     // flex: 1;
@@ -16,7 +16,7 @@
     flex: 1;
     height: 100%;
     width: 100%;
-    background-color: $Primary;
+    background-color: $primary;
     border-radius: 9999px 0 0 9999px;
     transition: width 0.2s linear;
   }

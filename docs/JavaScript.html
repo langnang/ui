@@ -13,17 +13,34 @@
     <script src="./../dist/js/ln.docs.js"></script>
     <script>
       const app = document.getElementById("app");
-      let html = '<table border="1px" width="100%">';
-      let index = 1;
-      html +=
-        "<tr><th style='width:60px;'>序号</th><th style='width:240px;'>方法</th><th>说明</th></tr>";
+      // let html = '<table border="1px" width="100%">';
+      // let index = 1;
+      // html +=
+      //   "<tr><th style='width:60px;'>序号</th><th style=''>方法</th><th>说明</th></tr>";
+      // ln.forEach(ln, function (v, k) {
+      //   html += `<tr><td>${index}</td><td>${
+      //     __ln__["__" + k + "__"]?.name || k
+      //   }</td><td> ${__ln__["__" + k + "__"]?.description || ""} </td></tr>`;
+      //   index++;
+      // });
+      // html += "</table>";
+      let html = "";
       ln.forEach(ln, function (v, k) {
-        html += `<tr><td>${index}</td><td>${k}</td><td> ${
-          __ln__["__" + k + "__"]?.description || ""
-        } </td></tr>`;
-        index++;
+        html += `
+        <div>
+          <a href="#${k}"><h4>${__ln__["__" + k + "__"]?.name || k}</h4></a>
+          <p> ${__ln__["__" + k + "__"]?.description || ""} </p>
+          <strong>参数</strong>
+          <ul>
+            ${(__ln__["__" + k + "__"]?.params || []).reduce((total, val) => total + `<li>${val.name}：${val.description}</li>`, "")}
+          </ul>
+          <strong>返回值</strong>
+          <ul>
+            ${(__ln__["__" + k + "__"]?.returns || []).reduce((total, val) => total + `<li>${val.type}：${val.description}</li>`, "")}
+          </ul>
+        </div>
+        `;
       });
-      html += "</table>";
       app.innerHTML = html;
     </script>
   </body>

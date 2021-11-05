@@ -1,11 +1,19 @@
 /**
  * 元素选择器
- * @param {Object} el
+ * @param {String} el
  */
 export const selector = el => document.querySelector(el)
 
 export const __selector__ = {
-  description: "元素选择器"
+  name: "selector(el)",
+  description: "元素选择器",
+  params: [
+    {
+      name: "el",
+      description: "标签元素",
+      type: "String"
+    }
+  ]
 }
 
 

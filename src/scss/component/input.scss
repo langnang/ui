@@ -1,0 +1,41 @@
+/**
+ * @name input
+ * @desc 输入框
+ */
+.#{$g-pre}input {
+  display: flex;
+  width: 100%;
+  border: 1px solid $default;
+  .#{$g-pre}input__prefix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid $default;
+  }
+  .#{$g-pre}input__inner,
+  input {
+    flex: 1;
+    font-size: 1.5rem;
+    border: 0;
+  }
+  .#{$g-pre}input__suffix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid $default;
+  }
+
+  @include size("height", 2rem);
+  @include size("border-radius", 4px);
+  @include size("padding", 4px, " ." +#{$g-pre}+ "input__prefix");
+  @include size("font-size", 1.2rem, " ." +#{$g-pre}+ "input__prefix");
+
+  @include size("font-size", 1.5rem, " ." +#{$g-pre}+ "input__inner");
+  @include size("margin-left", 4px, " ." +#{$g-pre}+ "input__inner");
+  @include size("margin-right", 4px, " ." +#{$g-pre}+ "input__inner");
+  @include size("font-size", 1.5rem, " input");
+  @include size("margin-left", 4px, " input");
+  @include size("margin-right", 4px, " input");
+  @include size("padding", 4px, " ." +#{$g-pre}+ "input__suffix");
+  @include size("font-size", 1.2rem, " ." +#{$g-pre}+ "input__suffix");
+}

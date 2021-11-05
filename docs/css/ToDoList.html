@@ -12,7 +12,8 @@
     <script src="./../../../dist/js/ln.js"></script>
     <script src="./../main.js"></script>
     <script>
-      const rules = getMatchCssRules("btn");
+      const rules = getMatchCssRules("todolist");
+      console.log(rules);
       let htmlInner = "";
       document.getElementById("app");
       document.getElementById("app").innerHTML = rules.reduce((total, rule) => total + `<button class="${rule.selectorText.substr(1).replace(/\./g, " ")}">${rule.selectorText}</button><br/>`, "");

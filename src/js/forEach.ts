@@ -13,6 +13,7 @@ export const __forEach__ = {
   description: "遍历对象",
   params: [
     {
+      name: 'obj',
       description: "需要遍历的对象",
       type: 'Object',
       default: null

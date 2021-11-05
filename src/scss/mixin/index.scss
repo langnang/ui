@@ -1,4 +1,14 @@
 @use "sass:color"; // https://sass-lang.com/documentation/modules/color
+// color.scale() for fluidly scaling a color’s properties.
+// color.change() for setting a color’s properties.
+// color.red() for getting a color’s red channel.
+// color.green() for getting a color’s green channel.
+// color.blue() for getting a color’s blue channel.
+// color.hue() for getting a color’s hue.
+// color.saturation() for getting a color’s saturation.
+// color.lightness() for getting a color’s lightness.
+// color.whiteness() for getting a color’s whiteness.
+// color.alpha() for getting a color’s alpha channel.
 @use "sass:list"; // https://sass-lang.com/documentation/modules/list
 @use "sass:map"; // https://sass-lang.com/documentation/modules/map
 @use "sass:math"; // https://sass-lang.com/documentation/modules/math
@@ -6,6 +16,5 @@
 @use "sass:selector"; // https://sass-lang.com/documentation/modules/selector
 @use "sass:string"; // https://sass-lang.com/documentation/modules/string
 
-@import "./background-color.scss";
-@import "./border-color.scss";
 @import "./color.scss";
+@import "./size.scss";

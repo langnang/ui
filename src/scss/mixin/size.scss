@@ -1,0 +1,16 @@
+/**
+ * 尺寸指令
+ * @param attr 属性名
+ * @param value 属性值
+ * @param selector 关联选择器
+ */
+@mixin size($attr, $value: unset, $selector: "") {
+  &#{$selector} {
+    #{$attr}: $value;
+  }
+  @each $name, $percent in ("xs": $xs, "sm": $sm, "md": $md, "dx": $dx, "xl": $xl) {
+    &.#{$name}#{$selector} {
+      #{$attr}: $value * $percent;
+    }
+  }
+}

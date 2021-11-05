@@ -1,13 +1,11 @@
 // @name todolist
 // @desc 待办事项列表
 // 容器
-.#{$g-pre}todolist-container {
+.#{$g-pre}todolist {
   // 组
   .#{$g-pre}todolist-group {
     .#{$g-pre}todolist-item {
-
-      input[type=checkbox] {
-
+      input[type="checkbox"] {
         &:checked {
           opacity: 0.5;
 
@@ -30,7 +28,9 @@
         text-decoration: line-through; // 划去文本
         opacity: 0.5; // 降低显示
       }
-
     }
   }
+}
+
+.#{$g-pre}todo {
 }
