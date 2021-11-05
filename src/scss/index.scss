@@ -12,15 +12,11 @@ $g-pre: "ln-";
 @import "component/index";
 
 * {
-  // padding: 0;
-  // margin: 0;
+  padding: 0;
+  margin: 0;
 }
 html {
   font-size: 18px;
-}
-body {
-  // margin: 0;
-  // padding: 0;
 }
 
 .text-center {

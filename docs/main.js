@@ -11,5 +11,5 @@ const getMatchCssRules = (name) => cssRules.filter((rule) => new RegExp(`^\.ln-$
 
 const app = document.getElementById("app");
 
-const rules = ln.getCssStyleRules(styleSheet, "^.red")[0]
-console.log(rules);
+// const rules = ln.getCssStyleRules(styleSheet, "^.red")[0]
+// console.log(rules);

@@ -4,18 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Button | @langnang/ui</title>
+    <title>Button Group | @langnang/ui</title>
     <link rel="stylesheet" href="./../../../dist/css/ln.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app" class="ln-grid-container">
+      <h2>Button Group</h2>
+      <div class="ln-btn-group" role="group" aria-label="...">
+        <button type="button" class="ln-btn">Left</button>
+        <button type="button" class="ln-btn">Middle</button>
+        <button type="button" class="ln-btn">Right</button>
+      </div>
+    </div>
     <script src="./../../../dist/js/ln.js"></script>
     <script src="./../main.js"></script>
-    <script>
-      const rules = getMatchCssRules("btn");
-      let htmlInner = "";
-      document.getElementById("app");
-      document.getElementById("app").innerHTML = rules.reduce((total, rule) => total + `<button class="${rule.selectorText.substr(1).replace(/\./g, " ")}">${rule.selectorText}</button><br/>`, "");
-    </script>
+    <script></script>
   </body>
 </html>
