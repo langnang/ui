@@ -25,17 +25,41 @@
     border-left: 1px solid $default;
   }
 
-  @include size("height", 2rem);
-  @include size("border-radius", 4px);
-  @include size("padding", 4px, " ." +#{$g-pre}+ "input__prefix");
-  @include size("font-size", 1.2rem, " ." +#{$g-pre}+ "input__prefix");
+  @include size(
+    (
+      height: 2rem,
+      border-radius: 4px,
+    )
+  );
 
-  @include size("font-size", 1.5rem, " ." +#{$g-pre}+ "input__inner");
-  @include size("margin-left", 4px, " ." +#{$g-pre}+ "input__inner");
-  @include size("margin-right", 4px, " ." +#{$g-pre}+ "input__inner");
-  @include size("font-size", 1.5rem, " input");
-  @include size("margin-left", 4px, " input");
-  @include size("margin-right", 4px, " input");
-  @include size("padding", 4px, " ." +#{$g-pre}+ "input__suffix");
-  @include size("font-size", 1.2rem, " ." +#{$g-pre}+ "input__suffix");
+  @include size(
+    (
+      padding: 4px,
+      font-size: 1.2rem,
+    ),
+    " ." +#{$g-pre}+ "input__prefix"
+  );
+  @include size(
+    (
+      font-size: 1.5rem,
+      margin-left: 4px,
+      margin-right: 4px,
+    ),
+    " ." +#{$g-pre}+ "input__inner"
+  );
+  @include size(
+    (
+      font-size: 1.5rem,
+      margin-left: 4px,
+      margin-right: 4px,
+    ),
+    " input"
+  );
+  @include size(
+    (
+      padding: 4px,
+      font-size: 1.2rem,
+    ),
+    " ." +#{$g-pre}+ "input__suffix"
+  );
 }

@@ -32,8 +32,8 @@ var __ajax__ = {
 /**
  * @name areaOfCircle
  * @desc 返回圆的面积
- * @param {*} radius
- * @param {*} pi
+ * @param {Number} radius
+ * @param {Number} pi
  */
 var __areaofCircle__ = {
     description: "圆的面积"
@@ -428,6 +428,29 @@ var __getCssStyleSheets__ = {
 };
 
 /**
+ * 获取地址栏的参数键值
+ * @param {String} url 地址
+ * @param {String} name 参数
+ * @returns {String|JSON}
+ */
+var __getUrlParams__ = {
+    name: "getUrlParams(url[, name])",
+    description: "获取地址栏的参数键值",
+    params: [
+        {
+            name: "url",
+            description: "地址",
+            type: "String"
+        },
+        {
+            name: "name",
+            description: "参数名",
+            type: "String"
+        }
+    ]
+};
+
+/**
  * @name head
  * @description 数组的前n个元素
  * @param {Array} arr
@@ -648,7 +671,13 @@ var __isObject__ = {
  * @param {*} num
  */
 var __isOdd__ = {
-    description: "检测是否是奇数"
+    description: "检测是否是奇数",
+    references: [
+        {
+            text: "IsOdd - The Algorithms",
+            href: "https://the-algorithms.com/zh_Hans/algorithm/isodd"
+        }
+    ]
 };
 
 /**
@@ -938,7 +967,8 @@ var __year__ = {
 };
 
 var __range__ = {
-    description: "时间区段"
+    description: "根据时间生成其所在的时间区段",
+    tags: ["Date"]
 };
 
 /**
@@ -947,7 +977,8 @@ var __range__ = {
  * @param {*} asLink
  */
 var __redirect__ = {
-    description: "重定向到指定的 URL"
+    description: "重定向到指定的 URL",
+    tags: []
 };
 
 /**
@@ -1176,6 +1207,7 @@ exports.__format__ = __format__;
 exports.__gcd__ = __gcd__;
 exports.__getCssStyleRules__ = __getCssStyleRules__;
 exports.__getCssStyleSheets__ = __getCssStyleSheets__;
+exports.__getUrlParams__ = __getUrlParams__;
 exports.__head__ = __head__;
 exports.__heapSort__ = __heapSort__;
 exports.__hexToRgb__ = __hexToRgb__;

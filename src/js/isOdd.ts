@@ -6,6 +6,11 @@
 export const isOdd = num => num % 2 === 1;
 export const __isOdd__ = {
   description: "检测是否是奇数",
-
+  references: [
+    {
+      text: "IsOdd - The Algorithms",
+      href: "https://the-algorithms.com/zh_Hans/algorithm/isodd"
+    }
+  ]
 }
 

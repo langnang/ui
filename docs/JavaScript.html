@@ -30,13 +30,21 @@
         <div>
           <a href="#${k}"><h4>${__ln__["__" + k + "__"]?.name || k}</h4></a>
           <p> ${__ln__["__" + k + "__"]?.description || ""} </p>
-          <strong>参数</strong>
+          ${__ln__["__" + k + "__"]?.tags ? "<strong>标签</strong>" : ""}
+          <ul>
+            ${(__ln__["__" + k + "__"]?.tags || []).reduce((total, val) => total + `<li>${val}</li>`, "")}
+          </ul>
+          ${__ln__["__" + k + "__"]?.params ? "<strong>参数</strong>" : ""}
           <ul>
             ${(__ln__["__" + k + "__"]?.params || []).reduce((total, val) => total + `<li>${val.name}：${val.description}</li>`, "")}
           </ul>
-          <strong>返回值</strong>
+          ${__ln__["__" + k + "__"]?.returns ? "<strong>返回值</strong>" : ""}
           <ul>
             ${(__ln__["__" + k + "__"]?.returns || []).reduce((total, val) => total + `<li>${val.type}：${val.description}</li>`, "")}
+          </ul>
+          ${__ln__["__" + k + "__"]?.references ? "<strong>参考</strong>" : ""}
+          <ul>
+            ${(__ln__["__" + k + "__"]?.references || []).reduce((total, val) => total + `<li><a href="${val.href}" target="_blank">${val.text}</a></li>`, "")}
           </ul>
         </div>
         `;

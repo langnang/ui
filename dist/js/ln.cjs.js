@@ -113,8 +113,8 @@ var ajax = function (option) {
 /**
  * @name areaOfCircle
  * @desc 返回圆的面积
- * @param {*} radius
- * @param {*} pi
+ * @param {Number} radius
+ * @param {Number} pi
  */
 var areaofCircle = function (radius, pi) {
     if (pi === void 0) { pi = Math.PI; }
@@ -942,6 +942,25 @@ var getCssStyleSheets = function (sheetName) {
 };
 
 /**
+ * 获取地址栏的参数键值
+ * @param {String} url 地址
+ * @param {String} name 参数
+ * @returns {String|JSON}
+ */
+var getUrlParams = function (url, name) {
+    var query = url.substring(url.indexOf("?"));
+    var vars = query.split("&");
+    var params = {};
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        params[pair[0]] = pair[1];
+        if (name && pair[0] === name)
+            return pair[1];
+    }
+    return params;
+};
+
+/**
  * @name head
  * @description 数组的前n个元素
  * @param {Array} arr
@@ -1736,11 +1755,11 @@ var sunday = function (date) { return new Date(date - (date.getDay() - 7) * 8640
 var year = function (date) { return date.getFullYear(); };
 
 /**
- * 时间区段
- * @param {*} date
- * @param {*} type
+ * 根据时间生成其所在的时间区段
+ * @param {Data} date
+ * @param {String} type
  */
-var range = function (date, type, opts) {
+var range = function (date, type, options) {
     // TODO type:year,month,week,day,hour,minute
     // TODO opts.start: if(type===year){(0,11)}
     // TODO opts.end:if(type==year){(0,11)}
@@ -1750,15 +1769,12 @@ var range = function (date, type, opts) {
             new Date(new Date(year(date) + 1, 0).getTime() - 1),
         ];
     }
-    if (type === "month") {
+    if (type === "month")
         return [firstDayofMonth(date), lastDayofMonth(date)];
-    }
-    if (type === "week") {
+    if (type === "week")
         return [startofDay(monday(date)), endofDay(sunday(date))];
-    }
-    if (type === "day") {
+    if (type === "day")
         return [startofDay(date), endofDay(date)];
-    }
     return [];
 };
 
@@ -2145,6 +2161,7 @@ exports.format = format;
 exports.gcd = gcd;
 exports.getCssStyleRules = getCssStyleRules;
 exports.getCssStyleSheets = getCssStyleSheets;
+exports.getUrlParams = getUrlParams;
 exports.head = head;
 exports.heapSort = heapSort;
 exports.hexToRgb = hexToRgb;

@@ -30,8 +30,8 @@ var __ajax__ = {
 /**
  * @name areaOfCircle
  * @desc 返回圆的面积
- * @param {*} radius
- * @param {*} pi
+ * @param {Number} radius
+ * @param {Number} pi
  */
 var __areaofCircle__ = {
     description: "圆的面积"
@@ -426,6 +426,29 @@ var __getCssStyleSheets__ = {
 };
 
 /**
+ * 获取地址栏的参数键值
+ * @param {String} url 地址
+ * @param {String} name 参数
+ * @returns {String|JSON}
+ */
+var __getUrlParams__ = {
+    name: "getUrlParams(url[, name])",
+    description: "获取地址栏的参数键值",
+    params: [
+        {
+            name: "url",
+            description: "地址",
+            type: "String"
+        },
+        {
+            name: "name",
+            description: "参数名",
+            type: "String"
+        }
+    ]
+};
+
+/**
  * @name head
  * @description 数组的前n个元素
  * @param {Array} arr
@@ -646,7 +669,13 @@ var __isObject__ = {
  * @param {*} num
  */
 var __isOdd__ = {
-    description: "检测是否是奇数"
+    description: "检测是否是奇数",
+    references: [
+        {
+            text: "IsOdd - The Algorithms",
+            href: "https://the-algorithms.com/zh_Hans/algorithm/isodd"
+        }
+    ]
 };
 
 /**
@@ -936,7 +965,8 @@ var __year__ = {
 };
 
 var __range__ = {
-    description: "时间区段"
+    description: "根据时间生成其所在的时间区段",
+    tags: ["Date"]
 };
 
 /**
@@ -945,7 +975,8 @@ var __range__ = {
  * @param {*} asLink
  */
 var __redirect__ = {
-    description: "重定向到指定的 URL"
+    description: "重定向到指定的 URL",
+    tags: []
 };
 
 /**
@@ -1113,4 +1144,4 @@ var __yesterday__ = {
     description: "昨天"
 };
 
-export { __$__, __PI__, __ajax__, __areaofCircle__, __arrayConcat__, __arrayEvery__, __arrayFill__, __arrayFilter__, __arrayFindIndex__, __arrayFind__, __arrayForEach__, __arrayIncludes__, __arrayIndexOf__, __arrayJoin__, __arrayKeys__, __arrayLastIndexOf__, __arrayMap__, __arrayOf__, __arrayPop__, __arrayPush__, __arrayReduceRight__, __arrayReduce__, __arrayReverse__, __arrayShift__, __arraySlice__, __arraySome__, __arraySort__, __arraySplice__, __arrayToTree__, __arrayUnshift__, __arrayValues__, __avg__, __bubbleSort__, __bucketSort__, __capitalize__, __collatz__, __countBy__, __count__, __countingSort__, __date__, __day__, __dayofWeek__, __debounce__, __deepCopyArray__, __digitize__, __distance__, __duplicate__, __endofDay__, __euclideanAlgorithm__, __extend__, __factorial__, __filterFalsy__, __firstDayofMonth__, __flatten__, __forEachRightArray__, __forEachRight__, __forEach__, __format__, __gcd__, __getCssStyleRules__, __getCssStyleSheets__, __head__, __heapSort__, __hexToRgb__, __hour__, __iniToJSON__, __insertionSort__, __isArrayEveryEqual__, __isArrayEvery__, __isArrayNone__, __isArraySome__, __isArraySorted__, __isArray__, __isBoolean__, __isBottomVisible__, __isBrowser__, __isDOM__, __isDate__, __isDefined__, __isDivisible__, __isEmpty__, __isEven__, __isFalse__, __isFinite__, __isFunction__, __isInteger__, __isJSONString__, __isLeapYear__, __isNaN__, __isNull__, __isNumber__, __isObject__, __isOdd__, __isPrimitive__, __isRegExp__, __isRoot__, __isSafeInteger__, __isString__, __isSymbol__, __isTrue__, __isUndefined__, __isVisibleinViewport__, __lastDayofMonth__, __lastNDay__, __leapYears__, __max__, __mergeSort__, __millisecond__, __min__, __minute__, __mobileType__, __monday__, __month__, __nextDays__, __nextHours__, __nextMinutes__, __nextMonths__, __nextSeconds__, __nextWeeks__, __nextYears__, __objectType__, __offset__, __queryAll__, __quickSort__, __radixSort__, __randomBoolean__, __randomHex__, __randomInteger__, __randomNumber__, __randomString__, __range__, __redirect__, __regs__, __rest__, __reverse__, __rgbToHex__, __scrollPosition__, __scrollToTop__, __second__, __selectionSort__, __selector__, __shellSort__, __splitByLength__, __startofDay__, __stringify__, __sum__, __sunday__, __swap__, __thousandsSeparator__, __throttle__, __timeTaken__, __timeline__, __timestamp__, __tomorrow__, __unique__, __url__, __verifyEmail__, __verifyNumber__, __weekofYear__, __year__, __yesterday__ };
+export { __$__, __PI__, __ajax__, __areaofCircle__, __arrayConcat__, __arrayEvery__, __arrayFill__, __arrayFilter__, __arrayFindIndex__, __arrayFind__, __arrayForEach__, __arrayIncludes__, __arrayIndexOf__, __arrayJoin__, __arrayKeys__, __arrayLastIndexOf__, __arrayMap__, __arrayOf__, __arrayPop__, __arrayPush__, __arrayReduceRight__, __arrayReduce__, __arrayReverse__, __arrayShift__, __arraySlice__, __arraySome__, __arraySort__, __arraySplice__, __arrayToTree__, __arrayUnshift__, __arrayValues__, __avg__, __bubbleSort__, __bucketSort__, __capitalize__, __collatz__, __countBy__, __count__, __countingSort__, __date__, __day__, __dayofWeek__, __debounce__, __deepCopyArray__, __digitize__, __distance__, __duplicate__, __endofDay__, __euclideanAlgorithm__, __extend__, __factorial__, __filterFalsy__, __firstDayofMonth__, __flatten__, __forEachRightArray__, __forEachRight__, __forEach__, __format__, __gcd__, __getCssStyleRules__, __getCssStyleSheets__, __getUrlParams__, __head__, __heapSort__, __hexToRgb__, __hour__, __iniToJSON__, __insertionSort__, __isArrayEveryEqual__, __isArrayEvery__, __isArrayNone__, __isArraySome__, __isArraySorted__, __isArray__, __isBoolean__, __isBottomVisible__, __isBrowser__, __isDOM__, __isDate__, __isDefined__, __isDivisible__, __isEmpty__, __isEven__, __isFalse__, __isFinite__, __isFunction__, __isInteger__, __isJSONString__, __isLeapYear__, __isNaN__, __isNull__, __isNumber__, __isObject__, __isOdd__, __isPrimitive__, __isRegExp__, __isRoot__, __isSafeInteger__, __isString__, __isSymbol__, __isTrue__, __isUndefined__, __isVisibleinViewport__, __lastDayofMonth__, __lastNDay__, __leapYears__, __max__, __mergeSort__, __millisecond__, __min__, __minute__, __mobileType__, __monday__, __month__, __nextDays__, __nextHours__, __nextMinutes__, __nextMonths__, __nextSeconds__, __nextWeeks__, __nextYears__, __objectType__, __offset__, __queryAll__, __quickSort__, __radixSort__, __randomBoolean__, __randomHex__, __randomInteger__, __randomNumber__, __randomString__, __range__, __redirect__, __regs__, __rest__, __reverse__, __rgbToHex__, __scrollPosition__, __scrollToTop__, __second__, __selectionSort__, __selector__, __shellSort__, __splitByLength__, __startofDay__, __stringify__, __sum__, __sunday__, __swap__, __thousandsSeparator__, __throttle__, __timeTaken__, __timeline__, __timestamp__, __tomorrow__, __unique__, __url__, __verifyEmail__, __verifyNumber__, __weekofYear__, __year__, __yesterday__ };

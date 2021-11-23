@@ -25,24 +25,13 @@
     </style>
   </head>
   <body>
-    <div id="app" class="ln-grid-container-fluid">
-      <h2>基本颜色</h2>
-      <div class="is-red">red</div>
-      <div class="is-yellow">yellow</div>
-      <div class="is-blue">blue</div>
-      <h2>状态色</h2>
-      <div class="is-default">default</div>
-      <div class="is-primary">primary</div>
-      <div class="is-info">info</div>
-      <div class="is-danger">danger</div>
-      <div class="is-warning">warning</div>
-      <div class="is-success">success</div>
-      <h2>渐变色</h2>
-    </div>
+    <div id="app" class="ln-grid-container-fluid"></div>
     <script src="./../../../dist/js/ln.js"></script>
     <script src="./../main.js"></script>
     <script>
-      let html = "";
+      let html = "<h2>Color</h2>";
+      html += ["default", "primary", "info", "success", "warning", "danger"].reduce((total, name) => total + itemInner(name), "<div class='ln-row'><h3>状态色</h3>");
+      html += "</div>";
       html += [
         "alice-blue",
         "antique-white",
@@ -187,12 +176,11 @@
         "white-smoke",
         "yellow",
         "yellow-green",
-      ].reduce((total, name) => total + itemInner(name), "<div class='ln-row'><h2>基本颜色</h2>");
+      ].reduce((total, name) => total + itemInner(name), "<div class='ln-row'><h3>基本颜色</h3>");
 
       html += "</div>";
-      html += ["default", "primary", "info", "success", "warning", "danger"].reduce((total, name) => total + itemInner(name), "<div class='ln-row'><h2>状态色</h2>");
-      html += "</div>";
-      html += [].reduce((total, name) => total + `<div class="ln-col-2"><p class="${name}">${name}<br/></p></div>`, "<div class='ln-row'><h2>渐变色</h2>");
+
+      html += [].reduce((total, name) => total + `<div class="ln-col-2"><p class="${name}">${name}<br/></p></div>`, "<div class='ln-row'><h3>渐变色</h3>");
       html += "</div>";
       app.innerHTML = html;
       function itemInner(name) {
@@ -207,6 +195,7 @@
         </div>
         `;
       }
+      console.log(ln.getCssStyleRules(styleSheet, "^.bisque")[0]);
     </script>
   </body>
 </html>
